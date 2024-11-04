@@ -1,0 +1,26 @@
+<h1>All the Animals</h1>
+<!-- The index.html file is inside Folder0, so any relative paths in this file will start from Folder0.
+ -->
+
+<h2>Rabbit:</h2>
+<!-- ./ refers to the current directory (Folder0 in this case) -->
+<!-- Using ./rabbit.png means accessing rabbit.png in the same directory as the HTML file (Folder0).
+ -->
+<img src="./rabbit.png" alt="Rabbit">
+
+<h2>Cat:</h2>
+<!-- ./Folder3/cat.png will access the "cat.png" file inside Folder3 within the current directory -->
+<!-- ./Folder3/cat.png means looking in the Folder3 subdirectory of the current directory (Folder0) and accessing cat.png. -->
+<img src="./Folder3/cat.png" alt="Cat">
+
+<h2>Dog:</h2>
+<!-- ../ goes up one level from Folder0 and then accesses "dog.png" -->
+<img src="../dog.png" alt="Dog">
+
+<h2>Fish:</h2>
+<!-- ../ goes up one level from Folder0, then goes into Folder1 and accesses "fish.png" -->
+<img src="../Folder1/fish.png" alt="Fish">
+
+<h2>Bird:</h2>
+<!-- ../ goes up one level from Folder0, then goes into Folder1, then into Folder2, and accesses "bird.png" -->
+<img src="../Folder1/Folder2/bird.png" alt="Bird">
