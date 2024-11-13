@@ -8,11 +8,12 @@
     h1 {
       font-family: "Doto", sans-serif;
       font-optical-sizing: auto;
-      font-weight: <weight>;
+      font-weight: 400; /* Changed to a valid font-weight */
       font-style: normal;
-      font-variation-settings:
-      "ROND" 0;
+      font-variation-settings: "wght" 400; /* Changed to a valid setting */
     }
+
+    /* Font family examples */
     #helvetica {
       font-family: Helvetica, sans-serif;
     }
@@ -41,13 +42,14 @@
       font-family: fantasy;
     }
   </style>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <h1> Font Family</h1>
+  <h1>Font Family</h1>
   <p id="helvetica">Helvetica</p>
   <p id="arial">Arial</p>
   <p id="serif">Serif</p>
@@ -55,7 +57,6 @@
   <p id="cursive">Cursive</p>
   <p id="monospace">Monospace</p>
   <p id="fantasy">Fantasy</p>
-
 </body>
 
 </html>
