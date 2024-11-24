@@ -9,15 +9,15 @@ p {
   color: red;
 }
 
-.note{
+.note {
   font-size: 20px;
 }
 
-#id-selector-demo{
+#id-selector-demo {
   color: green;
 }
 
-li[value="4"]{
+li[value] {
   color: blue;
 }
 

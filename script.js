@@ -94,132 +94,187 @@ Recap:
 - Use comments to annotate your code and explain complex logic or notes.
 */
 
-// Adding Numebrs
-var sum = 10 + 10;
+/* 
+Basic Arithmetic Operations 
+*/
+var sum = 10 + 10; // Addition
 console.log(sum);
 
-// Subtracting Numbers
-var difference = 45 - 33;
-console.log(difference)
+var difference = 45 - 33; // Subtraction
+console.log(difference);
 
-// Multiplying Numbers
-var product = 8 * 10;
+var product = 8 * 10; // Multiplication
 console.log(product);
 
-// Dividing Numbers
-var quotient = 66 / 33;
+var quotient = 66 / 33; // Division
 console.log(quotient);
 
-// Incrementing Numbers
+/*
+Incrementing and Decrementing Numbers
+*/
 var myVar = 87;
-myVar = myVar + 1;
-myVar++;
+myVar = myVar + 1; // Increment manually
+myVar++;           // Increment using shorthand
+console.log(myVar);
 
-// Decrementing Numbers
-var myVar = 11;
-myVar = myVar - 1;
-myVar--;
+myVar = 11;
+myVar = myVar - 1; // Decrement manually
+myVar--;           // Decrement using shorthand
+console.log(myVar);
 
-// Decimal Numbers
-var ourDecimal = 5.7;
-var myDecimal = 0.0009; // anything with a decimal in it it is a decimal number
+/*
+Decimal Numbers
+*/
+var ourDecimal = 5.7;  // Example of a decimal number
+var myDecimal = 0.0009; // Another decimal number
 
-// Multiply Decimals
-var product = 2.0 * 2.5;
+var product = 2.0 * 2.5; // Multiplication with decimals
 console.log(product);
 
-// Divide Decimals
-var quotient = 4.4 / 2.0;
+var quotient = 4.4 / 2.0; // Division with decimals
+console.log(quotient);
 
-// Finding a Remainder 
-var remainder;
-remainder = 11 % 3;
-// 11 divided by 3 is 9, 11 - 9 is 2, so remainder is 2
+/*
+Finding Remainder (Modulo Operator)
+*/
+var remainder = 11 % 3; // Remainder of 11 divided by 3
 console.log(remainder);
 
-// Compound Assignment with Augmneted Addiution
-var a  = 3;
+/*
+Compound Assignment Operators
+*/
+var a = 3;
 var b = 17;
 
-a = a + 12; // same as
-a += 12;
+// Compound addition
+a += 12; // Same as a = a + 12
+b += 9;  // Same as b = b + 9
 
-b = 9 + b; // as as
-b += 9;
+// Compound subtraction
+a -= 1; // Same as a = a - 1
 
-// Con pund Assignment with Augmented Subtreaction
-a = a - 1; // same as
-a -= 1;
+// Compound multiplication
+a *= 5; // Same as a = a * 5
 
-// Compound Assignmentwith Augmented Multiplication
-a *= 5;
+// Compound division
+a /= 1; // Same as a = a / 1
 
-// Compound Assignment with Augmented division
-a /= 1;
-
-// Declare String Variables
-// example 
+/*
+String Basics
+*/
+// Declaring string variables
 var firstName = "Airuike";
 var lastName = "Chen";
 
-// Escaping Literal Quotes in  Strings
-// put a back slash before each of the quotes mark it is no longer count as a string.
+// Escaping quotes in strings using backslash
 var myStr = "I am a \"double quoted\" string inside \"double quotes\"";
 console.log(myStr);
 
-// Quoting Strings with Single Quotes
-var myStr = '<a href="http://www.exmaple.com" target="_blank">Link</a>';
-// backticks also work `
-var myStr1 = `'<a href="http://www.exmaple2.com" target="_blank">Link</a>'`;
+// Using single quotes or backticks for strings
+var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+var myStr1 = `'<a href="http://www.example2.com" target="_blank">Link</a>'`;
 console.log(myStr);
 console.log(myStr1);
 
-// Escape Sequencess in Strings
-/******
-CODE   OUTPUT
-\'     single quote
-\"     double quote
-\\     backslash
-\n     newline
-\r     carriage return
-\t     tab
-\b     backspace
-\f     form feed
- ******/
-
+/*
+Escape Sequences in Strings
+\'  - Single quote
+\"  - Double quote
+\\  - Backslash
+\n  - Newline
+\r  - Carriage return
+\t  - Tab
+\b  - Backspace
+\f  - Form feed
+*/
 var myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
 console.log(myStr);
 
-// Concatenating Strings with plus Operator
+/*
+String Concatenation
+*/
+// Using the `+` operator
 var outStr = "I come first. " + "I come second.";
 console.log(outStr);
 
-// Concatenating Strings with Plush Equals Operator
+// Using `+=` to append strings
 var ourStr = "I come first. ";
-ourStr += "I come second.fasdhjlkfjhasldkjflkasjd";
+ourStr += "I come second.";
 console.log(ourStr);
 
-// Constructing Strings with Variables
+// Constructing strings with variables
 var myName = "freeCodeCamp";
-var outStr = "Hello, out name is " + ourName + ", how are you?"; 
+var outStr = "Hello, our name is " + myName + ", how are you?";
 console.log(outStr);
 
-// Appending Varibales to Strings
+// Appending variables to strings
 var anAdjective = "awesome!";
 var ourStr = "freeCodeCamp is ";
 ourStr += anAdjective;
 console.log(ourStr);
 
-// Find Length of String
-var firstNameLength = 0;
+/*
+String Properties and Indexing
+*/
+// Finding the length of a string
 var firstName = "Ada";
-
-firstNameLength = firstName.length;
+var firstNameLength = firstName.length;
 console.log(firstNameLength);
 
-// Bracket Notation to Find First Character in String
-var firstLetterOfFirstName = "";
-var firstName = "Ada";
+// Accessing characters using bracket notation
+var firstLetterOfFirstName = firstName[0]; // First character
+console.log(firstLetterOfFirstName);
 
-firstLetterOfFirstName = firstName[0];
-console.log(firstLetterOfFirstName)
+/*
+String Immutability
+*/
+// Strings in JavaScript are immutable, meaning their characters cannot be changed individually
+var myStr = "Jello World";
+myStr[0] = "H"; // This does NOT work!
+console.log(myStr); // Still "Jello World"
+
+// Reassigning the entire string works
+myStr = "Hello World"; 
+console.log(myStr); // Outputs "Hello World"
+
+// Bracket Notation to  Find Nth Character in String
+var firstName = "Ada";
+var secondLetterOfFirstName = firstName[1];
+var thridLetterOfFirstname = firstName[2];
+console.log(secondLetterOfFirstName);
+console.log(thridLetterOfFirstname);
+
+// Bracket Notation to Find Last Character in String
+var firstName = "Ada";
+var lastLetterOfFirstName = firstLetterOfFirstName[firstName.length - 1];
+
+// Bracket Notation to Find Nth-to-Last Character in String
+var lastName = "Lovelace";
+var secondToLastLetterOfLastName = lastName[lastName.length - 2];
+console.log(secondToLastLetterOfLastName);
+
+// Word Blanks
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+    var result = "";
+    result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store" + myAdverb;
+    return result;
+}
+
+console.log(wordBlanks("dog", "big", "ran", " quickly"));
+console.log(wordBlanks("bike", "slow", "flew", "slowly"));
+
+// Store Mulitple values with Arrays
+var ourArray = ["John", 23];
+
+// Nested Arrays
+var ourArray = [["the universe", 42], ["everything", 101010]];
+
+// Access Arrays Data with Indexes
+var ourArray = [50, 60 ,70];
+var ourData = ourArray[0]; // 50
+console.log(ourData);
+
+// Modify Array Data With Indexes
+var ourArray = [18, 64, 99];
+ourArray[1] = 45;
+console.log(ourArray); // outArray now equals [18, 45, 99]
